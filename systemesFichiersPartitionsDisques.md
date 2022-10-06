@@ -29,3 +29,8 @@ User@serveur:/$ sudo mount -a /dev/sdb1 /data
 User@serveur:/$ sudo mount -a /dev/sdb2 /win
 ```
 7. 
+![image](https://user-images.githubusercontent.com/97438358/194266875-78911766-02e2-4201-a7fa-1f6a02451ce1.png)  
+
+8. Ne peut etre fait sans VMWare remote console. (Pour l'instant)  
+  
+9.
