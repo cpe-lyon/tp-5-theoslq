@@ -24,7 +24,7 @@ User@serveur:~$ cd /
 User@serveur:/$ sudo mkdir data
 User@serveur:/$ sudo mkdir win
 User@serveur:/$ sudo nano /etc/fstab
-// on rajoute les lignes /dev/sdb1 /data ext4 defaults 0 0 et /dev/sdb1 /win ntfs defaults 0 0
+// on rajoute les lignes /dev/sdb1 /data ext4 defaults 0 0 et /dev/sdb2 /win ntfs defaults 0 0
 User@serveur:/$ sudo mount -a /dev/sdb1 /data
 User@serveur:/$ sudo mount -a /dev/sdb2 /win
 ```
@@ -33,4 +33,16 @@ User@serveur:/$ sudo mount -a /dev/sdb2 /win
 
 8. Ne peut etre fait sans VMWare remote console. (Pour l'instant)  
   
-9.
+9. 
+
+**Exercice 2. Partitionnement LVM**
+
+1.
+```console
+User@serveur:/$ sudo nano /etc/fstab
+// on rajoute les lignes /dev/sdb1 /data ext4 defaults 0 0 et /dev/sdb1 /win ntfs defaults 0 0
+User@serveur:/$ sudo mount -a /dev/sdb1 /data
+User@serveur:/$ sudo mount -a /dev/sdb2 /win
+```
+
+2.
