@@ -42,27 +42,33 @@ User@serveur:/$ sudo mount -a /dev/sdb2 /win
 User@serveur:/$ sudo umount /dev/sdb1
 User@serveur:/$ sudo umount /dev/sdb2
 ```
+
 2.
 <img width="467" alt="image" src="https://user-images.githubusercontent.com/97438358/194761397-b601a2a0-b3df-49d5-b87e-8650957825dc.png">  
+
 3.
 ```console
 User@serveur:/$ sudo pvcreate /dev/sdb1 
 User@serveur:/$ sudo pvdisplay
 ```
+
 4.
 ```console
 User@serveur:/$ sudo vgcreate /dev/sdb1
 User@serveur:/$ sudo vgdisplay
 ```
+
 5.
 ```console
 User@serveur:/$ sudo lvcreate -n lvData -l 100%FREE vg1
 ```
+
 6.
 ```console
 User@serveur:/$ sudo fdisk /dev/vg1/lvData
 User@serveur:/$ sudo mkfs.ext4 /dev/bg1/lvData
 ```
+
 7.
 ```console
 On utilise les mêmes commandes que les questions prédédentes pour ce disque (Exo 1 screen, puis commandes Exo 2)
@@ -74,6 +80,7 @@ On utilise les mêmes commandes que les questions prédédentes pour ce disque (
 ```console
 User@serveur:/$ sudo vgextend sysbg /dev/sdc1
 ```
+
 9.
 ```console
 User@serveur:/$ sudo lvresize -l +100%FREE /dev/vg01/lvData
